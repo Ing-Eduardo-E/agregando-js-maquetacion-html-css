@@ -13,6 +13,12 @@ body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
 }
+
+/*Este código es para activar o desactiver elementos de nuestro html*/
+.inactive {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,6 +63,7 @@ nav {
   color: var(--very-light-pink);
   font-size: var(--sm);
   margin-right: 12px;
+  cursor: pointer;
 }
 .navbar-shopping-cart {
   position: relative;
