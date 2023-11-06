@@ -6,7 +6,7 @@ const menuHamburguer = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 //integramamos la clase 13 a nuestro código y creamos la fusión entre esta y la principal
 const navbarShoppingCart = document.querySelector(".navbar-shopping-cart");
-const asideProductDetail = document.querySelector(".product-detail");
+const asideProductDetail = document.querySelector("#shopingCartContainer");
 //integramos la clase 6 y creamos una variable para el contenedor de las tarjetas
 const cardsContainer = document.querySelector(".cards-container");
 
