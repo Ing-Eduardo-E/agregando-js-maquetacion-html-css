@@ -88,46 +88,46 @@ productList.push({
     "https://http2.mlstatic.com/D_NQ_NP_769141-MCO52109910466_102022-O.webp",
 });
 
-//Recoriendo la lista de productos y creando un elemento por cada producto en la página Web
+//Creamos una funcion para recorrer la lista de productos y creando un elemento por cada producto en la página Web
 function renderProductList(arr) {
   for (product of arr) {
-  
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
-  
+
     const productImage = document.createElement("img");
     productImage.src = product.image;
     productImage.alt = product.name;
-  
+
     const productInfo = document.createElement("div");
     productInfo.classList.add("product-info");
-  
+
     const productDetails = document.createElement("div");
-  
+
     const productName = document.createElement("p");
     productName.textContent = product.name;
-  
+
     const productPrice = document.createElement("p");
     productPrice.textContent = `$${product.price.toFixed(2)}`;
-  
+
     const addToCartFigure = document.createElement("figure");
     const addToCartImage = document.createElement("img");
-    
+
     addToCartImage.src = "./icons/bt_add_to_cart.svg";
     addToCartImage.alt = "Add to cart";
     addToCartFigure.appendChild(addToCartImage);
-  
+
     productDetails.appendChild(productPrice);
     productDetails.appendChild(productName);
-  
+
     productInfo.appendChild(productDetails);
     productInfo.appendChild(addToCartFigure);
-  
+
     productCard.appendChild(productImage);
     productCard.appendChild(productInfo);
-  
+
     cardsContainer.appendChild(productCard);
   }
 }
 
+//Llamamos a la función renderProductList y le pasamos la lista de productos
 renderProductList(productList);
