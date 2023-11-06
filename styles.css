@@ -181,6 +181,7 @@ aside {
   margin-right: 14px;
 }
 .title {
+  cursor: pointer;
   font-size: var(--lg);
   font-weight: bold;
 }
